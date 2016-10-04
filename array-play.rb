@@ -45,6 +45,13 @@ movies << {
   stars: ["Leonardo DiCaprio", "JGL"]
 }
 
+
+
+total_budgets = movies.collect{ |movie| movie[:budget]}.reduce(0){|sum, budget| sum + budget}
+
+
+
+
 smaller_budget = movies.select{ |movie| movie [:budget] <= 100}.collect{ |movie| movie[:title]}
 
 leo_flicks = movies.select{ |movie| movie [:stars].include? "Leonardo DiCaprio"}.collect{ |movie| movie[:title]}

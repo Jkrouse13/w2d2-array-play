@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Short Names</h1>
+      <ul>
+        <% short_names.each do |short_names| %>
+          <li>
+            <%= short_names %>
+          </li>
+          <% end %>
+      </ul>
+    <h1>Four Letter Words</h1>
+      <ul>
+        <% four_letters.each do |words| %>
+          <li>
+            <%= words %>
+          </li>
+          <% end %>
+      </ul>
+    <h1>Smaller Budget</h1>
+        <ul>
+          <% smaller_budget.each do |movie| %>
+            <li>
+              <%= movie %>
+            </li>
+            <% end %>
+        </ul>
+    <h1>Leo Flicks</h1>
+      <ul>
+        <% leo_flicks.each do |movie| %>
+          <li>
+            <%= movie %>
+          </li>
+          <% end %>
+      </ul>
+
+
+  </body>
+</html>
